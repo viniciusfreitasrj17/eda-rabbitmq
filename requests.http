@@ -1,0 +1,42 @@
+# Admin
+
+###
+GET http://localhost:3000/api/products
+
+###
+POST http://localhost:3000/api/products
+content-type: application/json
+
+{
+    "title": "Sapato",
+    "image": "sapato.jpeg"
+}
+
+###
+GET http://localhost:3000/api/products/1
+
+###
+PUT http://localhost:3000/api/products/1
+content-type: application/json
+
+{
+    "title": "Sapato",
+    "image": "sapato3.jpeg"
+}
+
+###
+DELETE http://localhost:3000/api/products/1
+
+###
+POST http://localhost:3000/api/products/1/like
+content-type: application/json
+
+
+# Main
+
+###
+GET http://localhost:3001/api/products
+
+###
+POST http://localhost:3001/api/products/2/like
+content-type: application/json
